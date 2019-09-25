@@ -33,7 +33,7 @@ public class AuthorizationServerConfiguration extends WebSecurityConfigurerAdapt
 
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		clients.inMemory().withClient("akhil").secret(passwordEncoder.encode("akhil")).scopes("READ,WRITE")
+		clients.inMemory().withClient("mobile").secret(passwordEncoder.encode("mobiletest")).scopes("READ,WRITE")
 				.authorizedGrantTypes("refresh_token,authorization_code,password,client_credentials");
 
 	}
