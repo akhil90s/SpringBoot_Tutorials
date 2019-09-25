@@ -18,6 +18,7 @@ public class AuthorizationServerConfiguration extends WebSecurityConfigurerAdapt
 
 	PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
 
+	
 	@Autowired
 	AuthenticationManager authenticationManager;
 
